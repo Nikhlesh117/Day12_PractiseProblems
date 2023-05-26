@@ -34,8 +34,11 @@ namespace LambdaExpression
             //Console.WriteLine("Student Records with Ages between 12 and 18:");
             //expression.Retrieve_Records_Using_Linq();
 
-            Console.WriteLine("Students with Total Marks in Descending Order:");
-            expression.Sort_Records();
+            //Console.WriteLine("Students with Total Marks in Descending Order:");
+            //expression.Sort_Records();
+
+            Console.WriteLine("Students by Address:");
+            expression.Display_Address();
 
             Console.ReadLine();
         }

@@ -54,6 +54,16 @@ namespace LambdaExpression
             }
         }
 
+        public void Display_Address()
+        {
+            var address = list.Select(student => student.Address);
+            
+            foreach (var item in address)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
 
         public void AddStudent(Student student)
         {
