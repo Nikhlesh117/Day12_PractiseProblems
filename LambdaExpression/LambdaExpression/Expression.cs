@@ -22,6 +22,22 @@ namespace LambdaExpression
                 Console.WriteLine();
             }
         }
+        public void Retrieve_Records_Using_Linq()
+        {
+            var records = from student in list
+                          where student.Age >= 12 && student.Age <= 18
+                          select student;
+
+            foreach (var item in records)
+            {
+                Console.WriteLine("Id: " + item.Id);
+                Console.WriteLine("Name: " + item.Name);
+                Console.WriteLine("Phone Number: " + item.PhoneNumber);
+                Console.WriteLine("Address: " + item.Address);
+                Console.WriteLine("Age: " + item.Age);
+                Console.WriteLine();
+            }
+        }
 
         public void AddStudent(Student student)
         {

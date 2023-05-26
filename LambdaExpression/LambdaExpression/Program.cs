@@ -27,8 +27,12 @@ namespace LambdaExpression
             }
 
             // Display all student records
-            Console.WriteLine("All Student Records:");
-            expression.Display_Record();
+            //Console.WriteLine("All Student Records:");
+            //expression.Display_Record();
+
+            // Retrieve student records using LINQ for ages between 12 and 18
+            Console.WriteLine("Student Records with Ages between 12 and 18:");
+            expression.Retrieve_Records_Using_Linq();
 
             Console.ReadLine();
         }
