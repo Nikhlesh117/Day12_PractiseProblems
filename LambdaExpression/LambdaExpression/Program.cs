@@ -40,8 +40,11 @@ namespace LambdaExpression
             //Console.WriteLine("Students by Address:");
             //expression.Display_Address();
 
-            Console.WriteLine("First Three Student Records:");
-            expression.Display_FirstThreeRecord();
+            //Console.WriteLine("First Three Student Records:");
+            //expression.Display_FirstThreeRecord();
+
+            string searchName = "Bruce Wayne"; // Replace with the name you want to search for
+            expression.Display_SearchName(searchName);
 
             Console.ReadLine();
         }
