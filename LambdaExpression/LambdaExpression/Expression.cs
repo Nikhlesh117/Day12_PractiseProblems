@@ -38,6 +38,22 @@ namespace LambdaExpression
                 Console.WriteLine();
             }
         }
+        public void Sort_Records()
+        {
+            var records = list.OrderByDescending(student => student.TotalMarks);
+
+            foreach (var item in records)
+            {
+                Console.WriteLine("Id: " + item.Id);
+                Console.WriteLine("Name: " + item.Name);
+                Console.WriteLine("Phone Number: " + item.PhoneNumber);
+                Console.WriteLine("Address: " + item.Address);
+                Console.WriteLine("Age: " + item.Age);
+                Console.WriteLine("Total Marks: " + item.TotalMarks);
+                Console.WriteLine();
+            }
+        }
+
 
         public void AddStudent(Student student)
         {
