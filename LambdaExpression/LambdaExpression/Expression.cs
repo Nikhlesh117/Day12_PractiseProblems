@@ -9,7 +9,10 @@ namespace LambdaExpression
     public class Expression
     {
         List<Student> list = new List<Student>();
-
+        public void AddStudent(Student student)
+        {
+            list.Add(student);
+        }
         public void Display_Record()
         {
             foreach (var item in list)
@@ -64,11 +67,22 @@ namespace LambdaExpression
             }
         }
 
-
-        public void AddStudent(Student student)
+        public void Display_FirstThreeRecord()
         {
-            list.Add(student);
+            var records = list.Select(student => student).Take(3);
+            foreach (var item in records)
+            {
+                Console.WriteLine("Id: " + item.Id);
+                Console.WriteLine("Name: " + item.Name);
+                Console.WriteLine("Phone Number: " + item.PhoneNumber);
+                Console.WriteLine("Address: " + item.Address);
+                Console.WriteLine("Age: " + item.Age);
+                Console.WriteLine("Total Marks: " + item.TotalMarks);
+                Console.WriteLine();
+            }
         }
+
+
 
 
 

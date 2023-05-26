@@ -37,8 +37,11 @@ namespace LambdaExpression
             //Console.WriteLine("Students with Total Marks in Descending Order:");
             //expression.Sort_Records();
 
-            Console.WriteLine("Students by Address:");
-            expression.Display_Address();
+            //Console.WriteLine("Students by Address:");
+            //expression.Display_Address();
+
+            Console.WriteLine("First Three Student Records:");
+            expression.Display_FirstThreeRecord();
 
             Console.ReadLine();
         }
